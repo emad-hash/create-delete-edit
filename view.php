@@ -10,6 +10,7 @@ $result = $conn->query($sql);
 <head>
 <title>View Page</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="ph.css">
 </head>
 <body>
 <div class="container">
@@ -22,7 +23,8 @@ if ($result->num_rows > 0) {
 while ($row = $result->fetch_assoc()) {
 
         ?>
-                    <div class="card">
+                   <div class="card">
+                   <div class="card2">
                         <img src="<?php echo $row['img'];?>" alt="img car">
                         <p><?php echo $row['id'];?></p>
                         <p><?php echo $row['namecar']; ?></p>
@@ -31,6 +33,7 @@ while ($row = $result->fetch_assoc()) {
                         <a class="btn btn-info" href="update.php?id=<?php echo $row['id']; ?>">Edit</a>
                         <a class="btn btn-danger" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
                     </div>
+                   </div>
 
         <?php       }
             }
