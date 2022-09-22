@@ -45,7 +45,7 @@ if (isset($_GET['id'])) {
         } 
     ?>
         <h2>cer Update Form</h2>
-        <form action="" method="post">
+        <form action="#view.php" method="post">
           <fieldset>
              id:<br>
               <input type="text" name="id">

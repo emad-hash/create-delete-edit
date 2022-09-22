@@ -28,7 +28,7 @@ include "config.php";
 
 </head>
 <body>
-<form action="" method="POST">
+<form action="#view.php" method="POST">
   <fieldset>
     <legend>test</legend>
      name:<br>
